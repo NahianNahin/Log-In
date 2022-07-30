@@ -1,0 +1,17 @@
+body {
+    color: #737491;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.login{
+    height: 100vh;
+}
+.login-form{
+    width: 470px;
+
+}
+.position-absolute{
+    z-index: 9999;
+}
