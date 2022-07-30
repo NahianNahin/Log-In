@@ -1,6 +1,7 @@
 body {
     color: #737491;
     font-family: 'Inter', sans-serif;
+    background-color: rgba(248, 249, 250, .7);
 }
 a{
     text-decoration: none;
@@ -14,4 +15,69 @@ a{
 }
 .position-absolute{
     z-index: 9999;
+}
+.social-icon{
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 2.5rem;
+
+}
+
+.login-form-bottom a:hover .social-icon{
+    background-color: #0d6efd;
+    color: #fff !important;
+    border: 0;
+    
+}
+/* ---------------BACKGROUND IMAGE-----------------  */
+.login-form::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 550px;
+    background: url(../img/signin-illustration.png) no-repeat ;
+    background-position: center;
+    background-size: contain;
+    
+
+}
+.login-form-inner{
+    z-index: 9999;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+/* --------------RESPONSIVE------------- */
+@media only screen and (max-width: 688px) {
+    .login-form-inner{
+        
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .login-form::before{
+        
+        width: 100%;
+        height: 600px;
+        background: url(../img/signin-illustration.png) no-repeat ;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+}
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    
+    
+    .login-form-inner{
+        transform: translateY(50%);
+        
+    }
 }
